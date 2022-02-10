@@ -1,0 +1,19 @@
+    .nav-main {
+        background-color: $blk;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+
+        ul {
+            list-style: none;
+            li {
+                display: inline-flex;
+                text-transform: uppercase;
+                padding: 1.5rem;
+                font-size: $medium;
+            }
+        }
+    }
