@@ -1,12 +1,23 @@
-import react from "react";
+import React from "react";
 import Nav from './components/Nav';
-import Section from "./components/Section";
+import Landing from "./components/Landing";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Section id="main"/>
+      <section id="landing">
+        <Landing/>
+      </section>
+      <section id="motto">
+        
+      </section>
+      <section id="about">
+
+      </section>
+      <section id="projects">
+
+      </section>
     </div>
   );
 }

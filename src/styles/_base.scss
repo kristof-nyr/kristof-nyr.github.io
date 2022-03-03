@@ -3,7 +3,16 @@ html, body {
     padding: 0;
     font-family: $questrial;
     background-color: $gry;
-    
+    scroll-behavior: smooth;
+    // scroll-snap-type: proximity;
+    scrollbar-width: none;
+
+
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+
     a {
         color: $slmn;
         text-decoration: none;
