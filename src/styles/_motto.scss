@@ -1,0 +1,24 @@
+.motto-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    h1 {
+        font-size: $x-large;
+        color: $slmn;
+
+        .grd-bg {
+            // background-color: #f3ec78;
+            // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+            background-image: url("../../public/assets/holo_bg.jpg");
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+}

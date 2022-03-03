@@ -40,6 +40,7 @@
         &>a {
             color: $slmn;
             font-size:$medium;
+            user-select: none;
             // &::after {
             //     content: '';
             //     position: absolute;
