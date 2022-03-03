@@ -6,6 +6,7 @@ html, body {
     scroll-behavior: smooth;
     // scroll-snap-type: proximity;
     scrollbar-width: none;
+    cursor: none !important;
 
 
     section {
@@ -16,5 +17,6 @@ html, body {
     a {
         color: $slmn;
         text-decoration: none;
+        cursor: none !important;
     }
 }
