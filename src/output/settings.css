@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 .nav-main {
-  background-color: #1e1e1e;
+  mix-blend-mode: difference;
   position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 10vh;
@@ -16,8 +16,8 @@
 .nav-main ul li {
   display: inline-flex;
   text-transform: uppercase;
-  padding: 1.5rem;
-  font-size: 1.5rem;
+  padding: 5rem;
+  font-size: 2rem;
 }
 .nav-main ul li:before {
   content: "";
@@ -30,7 +30,7 @@
   transition: all 0.2s ease;
   transition-duration: 0.3s;
   opacity: 0;
-  background-color: #d9ccc5;
+  background-color: #D9CCC5;
 }
 .nav-main ul li:hover::before {
   width: 60px;
@@ -54,7 +54,7 @@ html section, body section {
   height: 100vh;
 }
 html a, body a {
-  color: #d9ccc5;
+  color: #D9CCC5;
   text-decoration: none;
 }
 
@@ -70,6 +70,12 @@ html a, body a {
   display: flex;
   flex-flow: column;
 }
+.landing-container .circle {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  animation: rot-circle 8s infinite linear;
+}
 .landing-container .explore-container {
   position: absolute;
   bottom: 10%;
@@ -78,7 +84,7 @@ html a, body a {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  border: 3px solid #d9ccc5;
+  border: 3px solid #D9CCC5;
   align-items: center;
   justify-content: center;
   transition: width 0.3s ease, height 0.3s ease;
@@ -89,16 +95,33 @@ html a, body a {
   transition: width 0.3s ease, height 0.3s ease;
 }
 .landing-container .explore-container > a {
-  color: #d9ccc5;
-  font-size: 1.5rem;
+  color: #D9CCC5;
+  font-size: 2rem;
   user-select: none;
 }
 
+@keyframes rot-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 992px) {
+  .explore-container {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+}
 .cursor2 {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background-color: #d9ccc5;
+  background-color: #D9CCC5;
   opacity: 0.6;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -123,7 +146,7 @@ html a, body a {
 }
 .motto-container h1 {
   font-size: 10rem;
-  color: #d9ccc5;
+  color: #D9CCC5;
 }
 .motto-container h1 .grd-bg {
   background: url("../../public/assets/holo_bg.jpg");
