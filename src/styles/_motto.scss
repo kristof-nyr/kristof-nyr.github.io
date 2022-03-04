@@ -9,6 +9,12 @@
     h1 {
         font-size: clamp(1rem, 12vw, $x-large);
         color: $slmn;
+        
+        // .animate-motto{
+        //     animation:slide-in-text 2.5s normal;
+        //     animation-timing-function:cubic-bezier(.95,0,.15,1)!important;
+            
+        }
 
         .grd-bg {
             //TODO: Fix moving bg
@@ -26,5 +32,15 @@
             // animation-timing-function: linear;
             // animation-iteration-count: infinite;
         }
+    }
+
+@keyframes slide-in-text{
+    0% {
+        opacity: 1;
+        transform: translate3d(0,170,0) rotateX(-50) rotate(18) skew(18,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }

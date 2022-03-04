@@ -9,6 +9,10 @@
     .logo-container {
         display: flex;
         flex-flow: column;
+
+        &>div {
+            display: flex;
+        }
     }
     .circle {
         position: absolute;
@@ -34,11 +38,11 @@
             height: 20rem;
             transition: width 0.3s ease, height 0.3s ease;
 
-            &>a::after {
-                // opacity: 1;
-                // transform: translate3d(0, 0, 0);
-                // transition: transform 0.3s ease;
-            }
+            // &>a::after {
+            //     // opacity: 1;
+            //     // transform: translate3d(0, 0, 0);
+            //     // transition: transform 0.3s ease;
+            // }
         }
 
 
