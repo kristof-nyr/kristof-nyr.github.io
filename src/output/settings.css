@@ -181,4 +181,44 @@ html a, body a {
   font-size: clamp(1rem, 5vw, 10rem);
 }
 
+.about-grid {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  color: #dcdcdc;
+  font-weight: 100;
+}
+.about-grid .about-me {
+  margin: 0;
+  padding: 0;
+  grid-area: 1/3/1/15;
+  font-size: 7rem;
+}
+.about-grid .about-me > span {
+  font-family: "Archivo", sans-serif;
+}
+.about-grid .about-pic {
+  grid-area: 4/5/10/15;
+}
+.about-grid .about-pic > img {
+  width: 400px;
+}
+.about-grid .about-pic2 {
+  grid-area: 8/12/12/15;
+}
+.about-grid .about-pic2 > img {
+  width: 400px;
+}
+.about-grid .about-story {
+  grid-area: 4/8/12/15;
+  font-size: 2rem;
+  mix-blend-mode: difference;
+}
+.about-grid .about-artsy {
+  font-size: 2rem;
+  grid-area: 8/3/12/7;
+}
+
 /*# sourceMappingURL=settings.css.map */

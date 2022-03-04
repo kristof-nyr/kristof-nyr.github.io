@@ -16,4 +16,51 @@
             font-size: clamp(1rem, 5vw, $x-large);
         }
     }
+
+}
+.about-grid {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(12,1fr);
+    color: $lght-gry;
+    font-weight: 100;
+
+    .about-me{
+        margin: 0;
+        padding: 0;
+        grid-area: 1/3/1/15;
+        font-size: $large;
+        // text-transform: uppercase;
+
+        &>span {
+            font-family: $archivo;
+        }
+    }
+    .about-pic{
+        grid-area: 4/5/10/15;
+        
+        &>img {
+            width: 400px;
+            
+        }
+    }   
+    .about-pic2{
+        grid-area: 8/12/12/15;
+        
+        &>img {
+            width: 400px;
+            
+        }
+    }   
+    .about-story {
+        grid-area: 4/8/12/15;
+        font-size: $medium;
+        mix-blend-mode: difference;
+    }
+    .about-artsy {
+        font-size: $medium;
+        grid-area:8/3/12/7;
+    }
 }
