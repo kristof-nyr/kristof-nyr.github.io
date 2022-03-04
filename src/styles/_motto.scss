@@ -7,7 +7,7 @@
     user-select: none;
 
     h1 {
-        font-size: $x-large;
+        font-size: clamp(1rem, 12vw, $x-large);
         color: $slmn;
 
         .grd-bg {

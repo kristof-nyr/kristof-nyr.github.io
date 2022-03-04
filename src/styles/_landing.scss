@@ -14,7 +14,6 @@
         position: absolute;
         top: 20%;
         right: 10%;
-        animation: rot-circle 8s infinite linear;
     }
 
     .explore-container {
@@ -63,14 +62,6 @@
     }
 }
 
-@keyframes rot-circle {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 @media screen and (max-width: 992px) {
     //TODO: Fix explore-container not disappearing

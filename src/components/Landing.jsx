@@ -1,11 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Landing = () => {
 
 
     return (
         <div className="landing-container">
-            <div className="logo-container">
+            <motion.div className="logo-container" animate={{y:[200,0]}} transition={{ease:"easeInOut",duration: 0.3}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="267.947" viewBox="0 0 250 267.947">
                 <path id="Path_46" data-name="Path 46" d="M0,0H101.744V46.2L145.349,0H250V46.2l-72.89,87.868L250,221.749v46.2H145.349l-43.6-46.2v46.2H0Z" fill="#d9ccc5"/>
                 </svg>
@@ -15,7 +16,9 @@ const Landing = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="267.95" viewBox="0 0 250 267.95">
                 <path id="Path_48" data-name="Path 48" d="M0,0,101.743-.053,145.509,46.82V0H250V65.738l-73.334,69.494V267.9H70V135.232L0,65.738Z" transform="translate(0 0.053)" fill="#d9ccc5"/>
                 </svg>
-                <div className="circle">
+
+            </motion.div>
+                <motion.div className="circle" animate={{rotate:360}} transition={{ease:"linear", duration:8, repeat:Infinity}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="308" height="307.5" viewBox="0 0 308 307.5">
                     <g id="circle" transform="translate(-1385 -315)">
                         <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1385 315)" fill="none" stroke="#d9ccc5" stroke-width="3">
@@ -37,9 +40,7 @@ const Landing = () => {
                         <line id="Line_6" data-name="Line 6" y2="307" transform="translate(1462.25 335.565) rotate(-30)" fill="none" stroke="#d9ccc5" stroke-width="3"/>
                     </g>
                     </svg>
-                </div>
-
-            </div>
+                </motion.div>
             <div className="explore-container">
                 <a href="#motto">EXPLORE</a>
             </div>

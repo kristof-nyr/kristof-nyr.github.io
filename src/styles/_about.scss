@@ -1,0 +1,20 @@
+.about-container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-items: center;
+
+    &>h1 {
+        font-size: $x-large;
+        text-transform: uppercase;
+        color: $slmn;
+        font-family: $archivo;
+        font-size: clamp(1rem, 10vw, $x-large);
+
+        &>span {
+            font-family: $questrial;
+            font-weight: 100;
+            font-size: clamp(1rem, 5vw, $x-large);
+        }
+    }
+}
