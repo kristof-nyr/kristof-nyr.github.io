@@ -2,15 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Landing = () => {
-    const variant = {
-            // x:0,y:170,z:0, rotateX:-50, skewX:18
-            x:[-50,0],
-            y:[200,0],
-            z:[0,0],
-            rotateX:[-50,0],
-            skew:[30,0]
-    }
-
     const slidein = {
         opacity:[0,1,1,1],
         y:[115,-25,0],
