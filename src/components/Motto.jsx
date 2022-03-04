@@ -1,6 +1,7 @@
 import React from "react";
 
 const Motto = () => {
+
     return (
         <div className="motto-container">
             <h1>
