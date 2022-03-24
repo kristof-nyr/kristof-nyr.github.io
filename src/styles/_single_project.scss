@@ -1,0 +1,37 @@
+.single-project-container {
+    display: flex;
+    flex-flow: column;
+    background-color: $gry;
+    flex-flow: row-reverse;
+    
+
+    .single-project-content {
+        width: 80%;
+        height: 100%;
+
+        &>img {
+            // width: 200px;
+            width: 300px;
+            // height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &>h1 {
+        text-transform: uppercase;
+        color: $slmn;
+        font-family: $archivo;
+        font-size: clamp(1rem, 5vw, $large);
+        text-orientation:mixed;
+        writing-mode: sideways-lr;
+        margin: 0;
+    }
+
+    &>p {
+        text-transform: uppercase;
+        color: $slmn;
+        font-family: $archivo;
+        max-width: 50px;
+        font-size: $small;
+    }
+}

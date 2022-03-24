@@ -41,3 +41,11 @@
             }
         }
     }
+
+    @media screen and (max-width: 992px) {
+        //TODO: Fix explore-container not disappearing
+        .nav-main {
+            display: none;
+        }
+    }
+    
