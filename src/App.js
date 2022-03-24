@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 // import Cursor from "./components/CircleCursor";
 import Motto from "./components/Motto";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <About />
       </section>
       <section id="projects">
-
+        <Projects />
       </section>
     </div>
   );
