@@ -17,7 +17,7 @@ const SingleProject = ({title, description, gridarea}) => {
         <>
             <motion.div className="single-project-container" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
                 <div className="single-project-content">
-                    <img src="../../assets/holo_bg.jpg" />
+                    <img src="../../assets/holo_bg.jpg" alt="image for the specified project"/>
                 </div>
                 <p>
                     {description}

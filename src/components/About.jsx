@@ -23,11 +23,11 @@ const About = () => {
         <motion.div className="about-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <div className="about-pic">
                 {/* TODO: Maybe do a render (licensing problems?) */}
-                <img src="../../assets/holo_bg.jpg"></img>
+                <img src="../../assets/holo_bg.jpg" alt="Holographic background render"></img>
             </div>
             {/* TODO: Refactor this */}
             <div className="about-pic2">
-                <img src="../../assets/holo_bg2.jpg"></img>
+                <img src="../../assets/holo_bg2.jpg" alt="Holographic background render"></img>
             </div>
             <h2 className="about-me">
                 <span>Hello</span>there
