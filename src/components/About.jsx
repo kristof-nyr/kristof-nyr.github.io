@@ -10,7 +10,7 @@ const About = () => {
         onscreen:{
             opacity:[0,1,1,1],
             y:[150,-25,0],
-            skewX:[5,0]
+            skewX:[3,0]
         }
     }
     return (

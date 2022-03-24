@@ -27,7 +27,7 @@ const Landing = () => {
                     </svg>
                 </motion.div>
             </div>
-                <motion.div className="circle" animate={{rotate:360}} transition={{ease:"linear", duration:8, repeat:Infinity}}>
+                {/* <motion.div className="circle" animate={{rotate:360}} transition={{ease:"linear", duration:8, repeat:Infinity}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="308" height="307.5" viewBox="0 0 308 307.5">
                     <g id="circle" transform="translate(-1385 -315)">
                         <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1385 315)" fill="none" stroke="#d9ccc5" stroke-width="3">
@@ -49,7 +49,7 @@ const Landing = () => {
                         <line id="Line_6" data-name="Line 6" y2="307" transform="translate(1462.25 335.565) rotate(-30)" fill="none" stroke="#d9ccc5" stroke-width="3"/>
                     </g>
                     </svg>
-                </motion.div>
+                </motion.div> */}
             <motion.div className="explore-container" drag dragConstraints={{top:-50,left:-50,right:50,bottom:50}} animate={{
                 scale:[0,1.2,1],
                 borderRadius:[50,150]
