@@ -21,7 +21,7 @@ const About = () => {
         </motion.div>
         <motion.div className="about-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <div className="brutalism-container">
-                <p>Brutalism is a strict, modernistic design language that has been said to be a reaction to the architecture of the 1940s, much of which was characterised by a retrospective nostalgia.The core of Brutalism was a reverence for materials, expressed honestly, stating "Brutalism is not concerned with the material as such but rather the quality of material"</p>
+                <p>Brutalism is a utilitarian aesthetic movement that shuns decoration in favor of exposing and celebrating the raw materials used to construct the design. By exposing materials of construction, brutalism has nothing to hide. It trades lofty ideals of beauty for the cold, hard truth.</p>
                 <p className="review">"Cannot be understood through stylistic analysis, although some day a comprehensible style might emerge"</p>
             </div>
             <div className="about-pic">

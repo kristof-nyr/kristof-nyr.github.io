@@ -5,6 +5,7 @@ import Landing from "./components/Landing";
 import Motto from "./components/Motto";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -20,8 +21,11 @@ function App() {
       <section id="about">
         <About />
       </section>
-      <section id="projects">
+      {/* <section id="projects">
         <Projects />
+      </section> */}
+      <section id="skills">
+        <Skills />
       </section>
     </div>
   );
