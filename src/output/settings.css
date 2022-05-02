@@ -267,12 +267,96 @@ html a, body a {
 
 .skills-container {
   width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.skills-container > h1 {
+  font-size: 10rem;
+  margin: 5% 0;
+  font-family: "Archivo", sans-serif;
+}
+
+.skills-grid {
+  width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   color: #1e1e1e;
   font-weight: 100;
+  justify-content: center;
+}
+.skills-grid .single-skill {
+  margin: 10%;
+  padding: 5%;
+  background-color: #1e1e1e;
+  color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-grid .size-4 {
+  width: 100%;
+  height: 100%;
+}
+.skills-grid .size-3 {
+  width: 80%;
+  height: 80%;
+}
+.skills-grid .react {
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+  grid-area: 1/1/4/3;
+}
+.skills-grid .scss {
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+  grid-area: 1/4/4/6;
+}
+.skills-grid .javascript {
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+  grid-area: 1/7/4/9;
+}
+.skills-grid .photoshop {
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+  grid-area: 1/10/4/12;
+}
+.skills-grid .nodejs {
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-area: 5/1/8/3;
+}
+.skills-grid .html {
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-area: 5/4/8/6;
+}
+.skills-grid .cybersec {
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-area: 5/7/8/9;
+}
+.skills-grid .design {
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-area: 5/10/8/12;
+}
+.skills-grid .golang {
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-area: 5/10/8/12;
+}
+.skills-grid .typescript {
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-area: 9/4/12/6;
+}
+.skills-grid .devops {
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-area: 9/1/12/3;
 }
 
 /*# sourceMappingURL=settings.css.map */
