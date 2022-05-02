@@ -9,8 +9,7 @@ const About = () => {
         },
         onscreen:{
             opacity:[0,1,1,1],
-            y:[150,-25,0],
-            skewX:[3,0]
+            y:[150,0,0],
         }
     }
     return (
@@ -21,17 +20,21 @@ const About = () => {
             </h1>
         </motion.div>
         <motion.div className="about-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
+            <div className="brutalism-container">
+                <p>Brutalism is a strict, modernistic design language that has been said to be a reaction to the architecture of the 1940s, much of which was characterised by a retrospective nostalgia.The core of Brutalism was a reverence for materials, expressed honestly, stating "Brutalism is not concerned with the material as such but rather the quality of material"</p>
+                <p className="review">"Cannot be understood through stylistic analysis, although some day a comprehensible style might emerge"</p>
+            </div>
             <div className="about-pic">
                 {/* TODO: Maybe do a render (licensing problems?) */}
-                <img src="../../assets/holo_bg.jpg" alt="Holographic background render"></img>
+                {/* <img src="../../assets/holo_bg.jpg" alt="Holographic background render"></img> */}
             </div>
             {/* TODO: Refactor this */}
             <div className="about-pic2">
-                <img src="../../assets/holo_bg2.jpg" alt="Holographic background render"></img>
+                {/* <img src="../../assets/holo_bg2.jpg" alt="Holographic background render"></img> */}
             </div>
-            <h2 className="about-me">
+            {/* <h2 className="about-me">
                 <span>Hello</span>there
-            </h2>
+            </h2> */}
             {/* TODO: Make a picture (3D type, without bg) */}
             <p className="about-story">
                 Computer science student based in Hungary. Currently working as a Software Engineer. My fascination with visual stuff came at an early age as I was mesmerized by certain art styles. Thus began my career as a front-end dev, which later transformed into full-stack.

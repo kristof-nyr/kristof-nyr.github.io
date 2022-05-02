@@ -5,7 +5,7 @@
     &>h1 {
         font-size: $x-large;
         text-transform: uppercase;
-        color: $slmn;
+        color: $blk;
         font-family: $archivo;
         font-size: clamp(1rem, 10vw, $x-large);
 
@@ -23,8 +23,20 @@
     display: grid;
     grid-template-columns: repeat(15,1fr);
     grid-template-rows: repeat(12,1fr);
-    color: $lght-gry;
+    color: $blk;
     font-weight: 100;
+
+    .brutalism-container {
+        margin: 0;
+        padding: 10px;
+        grid-area: 1/2/5/6;
+        border: 1px solid $blk;
+        text-align: justify;
+
+        .review {
+            text-decoration: underline;
+        }
+    }
 
     .about-me{
         margin: 0;
@@ -56,7 +68,7 @@
     .about-story {
         grid-area: 4/8/12/15;
         font-size: $medium;
-        mix-blend-mode: difference;
+        //mix-blend-mode: difference;
     }
     .about-artsy {
         font-size: $medium;
