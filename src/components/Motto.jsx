@@ -9,7 +9,7 @@ const Motto = () => {
         },
         onscreen:{
             opacity:[0,1,1,1],
-            y:[150,-25,0]
+            y:[150,0,0]
         }
     }
 
@@ -20,10 +20,11 @@ const Motto = () => {
         <motion.div className="motto-container" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <h1>
                 <div className="animate-motto">
-                    Value is through&nbsp;
-                    <span className="grd-bg">
+                    "Value is through scarcity"
+                    {/* <span className="grd-bg">
                         scarcity
-                    </span>
+                    </span> */}
+                    
                 </div>
             </h1>
         </motion.div>

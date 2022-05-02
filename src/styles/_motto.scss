@@ -9,40 +9,41 @@
     
     h1 {
         font-size: clamp(1rem, 12vw, $x-large);
-        color: $slmn;
-        
+        color: $blk;
+        text-transform: uppercase;
+    }}
         // .animate-motto{
         //     animation:slide-in-text 2.5s normal;
         //     animation-timing-function:cubic-bezier(.95,0,.15,1)!important;
             
-        }
+//         }
 
-        .grd-bg {
-            //TODO: Fix moving bg
-            // background-color: #f3ec78;
-            // background-image: linear-gradient(45deg, #f3ec78, #af4261);
-            background: url("../../public/assets/holo_bg.jpg");
-            // background-repeat: repeat-y;
-            background-size: 100%;
-            background-attachment: fixed;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-text-fill-color: transparent;
-            // animation-name: slide-bg;
-            // animation-duration: 50s;
-            // animation-timing-function: linear;
-            // animation-iteration-count: infinite;
-        }
-    }
+//         .grd-bg {
+//             //TODO: Fix moving bg
+//             // background-color: #f3ec78;
+//             // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+//             background: url("../../public/assets/holo_bg.jpg");
+//             // background-repeat: repeat-y;
+//             background-size: 100%;
+//             background-attachment: fixed;
+//             -webkit-background-clip: text;
+//             -moz-background-clip: text;
+//             -webkit-text-fill-color: transparent; 
+//             -moz-text-fill-color: transparent;
+//             // animation-name: slide-bg;
+//             // animation-duration: 50s;
+//             // animation-timing-function: linear;
+//             // animation-iteration-count: infinite;
+//         }
+//     }
 
-@keyframes slide-in-text{
-    0% {
-        opacity: 1;
-        transform: translate3d(0,170,0) rotateX(-50) rotate(18) skew(18,0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
+// @keyframes slide-in-text{
+//     0% {
+//         opacity: 1;
+//         transform: translate3d(0,170,0) rotateX(-50) rotate(18) skew(18,0);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: none;
+//     }
+// }
