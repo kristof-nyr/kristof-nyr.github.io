@@ -46,7 +46,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Questrial", sans-serif;
-  background-color: #1e1e1e;
+  background-color: #dcdcdc;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
@@ -89,32 +89,32 @@ html a, body a {
   display: flex;
   width: 15rem;
   height: 15rem;
-  border-radius: 100%;
-  border: 3px solid #D9CCC5;
-  align-items: center;
   justify-content: center;
-  transition: width 0.3s ease, height 0.3s ease;
+  align-items: center;
 }
-.landing-container .explore-container:hover {
-  width: 20rem;
-  height: 20rem;
-  transition: width 0.3s ease, height 0.3s ease;
+.landing-container .explore-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 70%;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: #1e1e1e;
 }
-.landing-container .explore-container > a {
-  color: #D9CCC5;
-  font-size: 2rem;
+.landing-container .explore-container:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+.landing-container .explore-container > a, .landing-container .explore-container > p {
+  color: #1e1e1e;
+  font-size: 7rem;
   user-select: none;
 }
 
-@media screen and (max-width: 992px) {
-  .explore-container {
-    display: none;
-  }
-
-  .circle {
-    display: none;
-  }
-}
 .cursor2 {
   width: 25px;
   height: 25px;

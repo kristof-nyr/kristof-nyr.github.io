@@ -26,49 +26,34 @@
         left: 10%;
         display: flex;
         width: 15rem;
-        height: 15rem;
-        border-radius: 100%;
-        border: 3px solid $slmn;
-        align-items: center;
+        height: 15rem;  
         justify-content: center;
-        transition: width 0.3s ease,height 0.3s ease;
+        align-items: center;
 
-        &:hover{
-            width: 20rem;
-            height: 20rem;
-            transition: width 0.3s ease, height 0.3s ease;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 70%;
+            width: 0px;
+            height: 5px;
+            margin: 5px 0 0;
+            transition: all 0.2s ease;
+            transition-duration: 0.3s;
+            opacity: 0;
+            background-color: $blk;
 
-            // &>a::after {
-            //     // opacity: 1;
-            //     // transform: translate3d(0, 0, 0);
-            //     // transition: transform 0.3s ease;
-            // }
+        }
+        &:hover::after {
+            // left: 50%;
+            width: 100%;
+            opacity: 1;
         }
 
-
-        &>a {
-            color: $slmn;
-            font-size:$medium;
+        &>a, &>p {
+            color: $blk;
+            font-size:$large;
             user-select: none;
-            // &::after {
-            //     content: '';
-            //     position: absolute;
-            //     bottom: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 0.1em;
-            //     background-color: $slmn;
-            //     opacity: 0;
-            //     transition: transform 0.3s ease;
-            //     transform: translate3d(-100%, 0, 0);
-            // }
         }
     }
-}
-
-
-@media screen and (max-width: 992px) {
-    //TODO: Fix explore-container not disappearing
-    .explore-container {display:none;} 
-    .circle {display: none;}
 }
