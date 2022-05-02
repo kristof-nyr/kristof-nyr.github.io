@@ -25,13 +25,13 @@
     grid-template-rows: repeat(12,1fr);
     color: $blk;
     font-weight: 100;
+    text-align: justify;
 
     .brutalism-container {
         margin: 0;
         padding: 10px;
         grid-area: 1/2/5/6;
         border: 2px solid $blk;
-        text-align: justify;
 
         .review {
             text-decoration: underline;

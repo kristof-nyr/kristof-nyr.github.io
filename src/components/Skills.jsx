@@ -41,13 +41,13 @@ const Skills = () => {
             "size":2
         },
         {
-            "name":"typescript",
-            "size":2
-        },
-        {
             "name":"devops",
             "size":2
         },
+        {
+            "name":"typescript",
+            "size":2
+        }
     ]
 
     return (

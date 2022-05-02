@@ -37,7 +37,7 @@ const About = () => {
             </h2> */}
             {/* TODO: Make a picture (3D type, without bg) */}
             <p className="about-story">
-                Computer science student based in Hungary. Currently working as a Software Engineer. My fascination with visual stuff came at an early age as I was mesmerized by certain art styles. Thus began my career as a front-end dev, which later transformed into full-stack.
+                Computer science student based in Hungary. Currently working as a Software Engineer. My fascination with visual stuff came at an early age as I was mesmerized by certain art styles. Thus began my career as a front-end dev, which later transformed into full-stack. I'm also experimenting with DevOps principles and Golang development.
             </p>
             <p className="about-artsy">
                 I also believe self-expression and visual storytelling go hand in hand. Hence I aim to create visually pleasing works which invoke feelings in its viewers. 

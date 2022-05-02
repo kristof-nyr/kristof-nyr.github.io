@@ -115,6 +115,12 @@ html a, body a {
   user-select: none;
 }
 
+@media screen and (max-width: 600px) {
+  .explore-container {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
 .cursor2 {
   width: 25px;
   height: 25px;
@@ -174,13 +180,13 @@ html a, body a {
   grid-template-rows: repeat(12, 1fr);
   color: #1e1e1e;
   font-weight: 100;
+  text-align: justify;
 }
 .about-grid .brutalism-container {
   margin: 0;
   padding: 10px;
   grid-area: 1/2/5/6;
   border: 2px solid #1e1e1e;
-  text-align: justify;
 }
 .about-grid .brutalism-container .review {
   text-decoration: underline;
@@ -303,6 +309,10 @@ html a, body a {
   width: 80%;
   height: 80%;
 }
+.skills-grid .size-2 {
+  width: 50%;
+  height: 50%;
+}
 .skills-grid .react {
   grid-template-columns: 4;
   grid-template-rows: 4;
@@ -346,17 +356,28 @@ html a, body a {
 .skills-grid .golang {
   grid-template-columns: 2;
   grid-template-rows: 2;
-  grid-area: 5/10/8/12;
+  grid-area: 9/1/12/3;
 }
 .skills-grid .typescript {
   grid-template-columns: 2;
   grid-template-rows: 2;
-  grid-area: 9/4/12/6;
+  grid-area: 9/7/12/9;
 }
 .skills-grid .devops {
   grid-template-columns: 2;
   grid-template-rows: 2;
-  grid-area: 9/1/12/3;
+  grid-area: 9/4/12/6;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-grid {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .skills-grid .single-skill {
+    padding: 10vh 0;
+  }
 }
 
 /*# sourceMappingURL=settings.css.map */

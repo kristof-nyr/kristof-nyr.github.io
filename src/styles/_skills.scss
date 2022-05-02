@@ -40,6 +40,10 @@
         width: 80%;
         height: 80%;
     }
+    .size-2 {
+        width: 50%;
+        height: 50%;
+    }
 
     .react {
         grid-template-columns: 4;
@@ -86,16 +90,28 @@
     .golang {
         grid-template-columns: 2;
         grid-template-rows: 2;
-        grid-area: 5/10/8/12;
+        grid-area: 9/1/12/3
     }
     .typescript {
         grid-template-columns: 2;
         grid-template-rows: 2;
-        grid-area: 9/4/12/6;
+        grid-area: 9/7/12/9;
     }
     .devops {
         grid-template-columns: 2;
         grid-template-rows: 2;
-        grid-area: 9/1/12/3
+        grid-area: 9/4/12/6;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .skills-grid {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .single-skill{
+            padding: 10vh 0;
+        }
     }
 }
