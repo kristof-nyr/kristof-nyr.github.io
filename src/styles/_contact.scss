@@ -1,0 +1,32 @@
+.contact-container {
+    width: 100%;
+    height: 100vh;
+
+    .contact-title {
+        width: 100%;
+
+        &>h1 {
+            font-size: $x-large;
+            font-family: $archivo;
+            text-transform: uppercase;
+        }
+    }
+
+    .contact-list {
+        display: flex;
+        border: 5px solid $blk;
+        margin: 0 5%;
+        padding: 0 1rem;
+        
+        &>div {
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            
+            &>a {
+                color: $blk;
+            }
+        }
+    }
+}

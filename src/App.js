@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import Motto from "./components/Motto";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section id="skills">
         <Skills />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );
