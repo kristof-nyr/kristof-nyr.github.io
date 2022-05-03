@@ -224,7 +224,7 @@ html a, body a {
 .projects-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .projects-container > h1 {
   font-size: 10rem;
@@ -274,7 +274,7 @@ html a, body a {
 .skills-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .skills-container > h1 {
   font-size: 10rem;
