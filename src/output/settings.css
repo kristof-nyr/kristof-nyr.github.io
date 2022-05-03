@@ -393,14 +393,16 @@ html a, body a {
 }
 .contact-container .contact-list {
   display: flex;
-  border: 5px solid #1e1e1e;
   margin: 0 5%;
-  padding: 0 1rem;
+  flex-flow: column;
 }
 .contact-container .contact-list > div {
+  border: 5px solid #1e1e1e;
   display: flex;
-  width: 100%;
   align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
 }
 .contact-container .contact-list > div > a {
   color: #1e1e1e;

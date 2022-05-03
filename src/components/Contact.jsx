@@ -1,5 +1,6 @@
 import react from "react";
 import { GrLinkedin } from 'react-icons/gr'
+import { GrGithub } from 'react-icons/gr'
 
 const Contact = () => {
 
@@ -8,6 +9,16 @@ const Contact = () => {
             "title": "linkedin",
             "url":"url",
             "icon": <GrLinkedin />
+        },
+        {
+            "title": "github",
+            "url":"url",
+            "icon": <GrGithub />
+        },
+        {
+            "title": "github",
+            "url":"url",
+            "icon": <GrGithub />
         }
     ]
 
