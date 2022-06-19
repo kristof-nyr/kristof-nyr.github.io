@@ -13,17 +13,15 @@
 
 .skills-grid {
     width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,1fr);
+    display: flex;
+    flex-wrap: wrap;
     color: $blk;
     font-weight: 100;
     justify-content: center;
 
     .single-skill{
-        margin: 10%;
-        padding: 5%;
+        margin: 5vh;
+        padding: 4vh;
         background-color: $blk;
         color: $lght-gry;
         display: flex;
@@ -32,77 +30,19 @@
     }
 
     .size-4 {
-        width: 100%;
-        height: 100%;
+        width: 15vh;
+        height: 15vh;
     }
 
     .size-3 {
-        width: 80%;
-        height: 80%;
+        width: 10vh;
+        height: 10vh;
     }
     .size-2 {
-        width: 50%;
-        height: 50%;
+        width: 5vh;
+        height: 5vh;
     }
 
-    .react {
-        grid-template-columns: 4;
-        grid-template-rows: 4;
-        grid-area: 1/1/4/3;
-    }
-    .scss {
-        grid-template-columns: 4;
-        grid-template-rows: 4;
-        grid-area: 1/4/4/6;
-    }
-
-    .javascript {
-        grid-template-columns: 4;
-        grid-template-rows: 4;
-        grid-area: 1/7/4/9;
-    }
-    .photoshop {
-        grid-template-columns: 4;
-        grid-template-rows: 4;
-        grid-area: 1/10/4/12;
-    }
-
-    .nodejs {
-        grid-template-columns: 3;
-        grid-template-rows: 3;
-        grid-area: 5/1/8/3;
-    }
-    .html {
-        grid-template-columns: 3;
-        grid-template-rows: 3;
-        grid-area: 5/4/8/6;
-    }
-    .cybersec {
-        grid-template-columns: 3;
-        grid-template-rows: 3;
-        grid-area: 5/7/8/9;
-    }
-    .design {
-        grid-template-columns: 3;
-        grid-template-rows: 3;
-        grid-area: 5/10/8/12;
-    }
-    .golang {
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-        grid-area: 9/1/12/3
-    }
-    .typescript {
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-        grid-area: 9/7/12/9;
-    }
-    .devops {
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-        grid-area: 9/4/12/6;
-    }
-}
 
 @media screen and (max-width:600px) {
     .skills-grid {
@@ -114,4 +54,5 @@
             padding: 10vh 0;
         }
     }
+}
 }

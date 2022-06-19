@@ -18,15 +18,40 @@
         flex-flow: column;
         
         &>div {
-            border: 5px solid $blk;
+            border-bottom: 5px solid $blk;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 0.5rem 0;
             padding: 0 1rem;
 
+            &:nth-child(1) {
+                border-top: 5px solid $blk;
+            }
+
             &>a {
                 color: $blk;
+
+                &:after {
+                    content: "";
+                    position: relative;
+                    display: block;
+                    // bottom: 0;
+                    // top: 100%;
+                    width: 0px;
+                    height: 5px;
+                    margin: -5px 0 0;
+                    transition: all 0.2s ease;
+                    transition-duration: 0.3s;
+                    opacity: 0;
+                    background-color: $blk;
+        
+                }
+                &:hover::after {
+                    // left: 50%;
+                    width: 100%;
+                    opacity: 1;
+                }
             }
 
         }
