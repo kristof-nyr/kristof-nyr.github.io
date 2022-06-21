@@ -40,6 +40,16 @@
 
             }
         }
+        .lang-select {
+            text-transform: uppercase;
+            padding: 1rem;
+            font-family: $questrial;
+            cursor: pointer;
+
+            * {
+                text-transform: uppercase;
+            }
+        }
     }
 
     @media screen and (max-width: 992px) {

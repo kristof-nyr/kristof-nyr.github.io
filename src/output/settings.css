@@ -36,6 +36,15 @@
   width: 60px;
   opacity: 1;
 }
+.nav-main .lang-select {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-family: "Questrial", sans-serif;
+  cursor: pointer;
+}
+.nav-main .lang-select * {
+  text-transform: uppercase;
+}
 
 @media screen and (max-width: 992px) {
   .nav-main {
