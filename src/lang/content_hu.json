@@ -1,13 +1,12 @@
 {
-    "pages" : {
-        "nav": {
-            
-        },
-        "landing": {
+    "nav": {
+        
+    },
+    "landing": {
+        "explore": "Felfedez"
 
-        },
-        "motto": {
+    },
+    "motto": {
 
-        }
     }
 }

@@ -1,4 +1,3 @@
-import en from './content_en.json';
 import hu from './content_hu.json';
 import en from './content_en.json';
 
