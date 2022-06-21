@@ -1,5 +1,28 @@
-import {createContext} from 'react';
-import {hu} from '../../public/assets/content_en.json';
-import {en} from '../../public/assets/content_hu.json';
+import {createContext, useState} from 'react';
+import { languageOptions, dictionaryList } from '../lang';
 
-export const LanguageContext = createContext({hu});
+export const LanguageContext = createContext({
+    userLanguage: 'en',
+    dictionary: dictionaryList.en
+});
+
+export function LanguageProvider({ children }) {
+    const defaultLanguage = window.localStorage.getItem('rcml-lang');
+    const [userLanguage, setUserLanguage] = useState(defaultLanguage || 'en');
+  
+    const provider = {
+      userLanguage,
+      dictionary: dictionaryList[userLanguage],
+      userLanguageChange: selected => {
+        const newLanguage = languageOptions[selected] ? selected : 'en'
+        setUserLanguage(newLanguage);
+        window.localStorage.setItem('rcml-lang', newLanguage);
+      }
+    };
+  
+    return (
+      <LanguageContext.Provider value={provider}>
+        {children}
+      </LanguageContext.Provider>
+    );
+  };

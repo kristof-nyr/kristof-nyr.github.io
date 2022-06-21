@@ -1,5 +1,5 @@
 import React from "react"
-import MultiLingualContent from "./MultilingualComponent";
+import { Text } from "./Text";
 
 const Landing = () => {
 
@@ -24,7 +24,7 @@ const Landing = () => {
             </div>
             <div className="explore-container">
                 <a href="#motto">
-                    <MultiLingualContent contentID="explore"/>
+                    <Text page="landing" text="explore"/>
                 </a>
                 <p>&darr;</p>
             </div>
