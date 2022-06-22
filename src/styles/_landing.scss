@@ -60,7 +60,7 @@
 
 @media screen and (max-width:600px) {
     .explore-container {
-        width: 100%;
-        font-size: $medium;
+        display: none;
+        opacity: 0;
     }
 }
