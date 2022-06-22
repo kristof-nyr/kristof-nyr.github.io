@@ -19,7 +19,6 @@
 }
 .about-grid {
     width: 100%;
-    height: 80vh;
     display: grid;
     grid-template-columns: repeat(15,1fr);
     grid-template-rows: repeat(12,1fr);
@@ -73,5 +72,11 @@
     .about-artsy {
         font-size: $medium;
         grid-area:8/3/12/7;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brutalism-container {
+      display: none;
     }
 }

@@ -1,6 +1,7 @@
 import react from "react";
 import { GrLinkedin } from 'react-icons/gr'
 import { GrGithub } from 'react-icons/gr'
+import { Text } from "./Text";
 
 const Contact = () => {
 
@@ -25,7 +26,9 @@ const Contact = () => {
     return (
         <div className="contact-container">
             <div className="contact-title">
-                <h1>contact</h1>
+                <h1>
+                    <Text page="contact" text="title" />
+                </h1>
             </div>
             <div className="contact-list">
                 {contactInformation.map(e => {

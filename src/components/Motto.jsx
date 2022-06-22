@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Text } from "./Text";
 
 const Motto = () => {
   
@@ -13,18 +14,11 @@ const Motto = () => {
         }
     }
 
-
-
     return (
-        //TODO: Framer-Motion variant translate3d(0,170,0) rotateX(-50) rotate(18) skew(18,0)
         <motion.div className="motto-container" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <h1>
                 <div className="animate-motto">
-                    "Value is through scarcity"
-                    {/* <span className="grd-bg">
-                        scarcity
-                    </span> */}
-                    
+                    <Text page="motto" text="motto-text"/>                 
                 </div>
             </h1>
         </motion.div>

@@ -6,10 +6,10 @@ const Nav = () => {
     return (
             <nav className="nav-main">
                 <ul>
-                   <li><NavLink link="#landing" name="Home" /></li>
-                    <li><NavLink link="#about" name="About" /></li>
-                    <li><NavLink link="#skills" name="Skills" /></li>
-                    <li><NavLink link="contact" name="Contact" /></li> 
+                   <li><NavLink link="#landing" text="home" /></li>
+                    <li><NavLink link="#about" text="about" /></li>
+                    <li><NavLink link="#skills" text="skills" /></li>
+                    <li><NavLink link="contact" text="contact" /></li> 
                 </ul>
                 <LanguageSelector/>
             </nav>
