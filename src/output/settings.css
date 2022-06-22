@@ -259,56 +259,6 @@ html a, body a {
     font-size: 5vw;
   }
 }
-.projects-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.projects-container > h1 {
-  font-size: 13.3vw;
-  text-transform: uppercase;
-  color: #D9CCC5;
-  font-family: "Archivo", sans-serif;
-  font-size: clamp(1rem, 10vw, 13.3vw);
-}
-
-.projects-grid {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.single-project-container {
-  display: flex;
-  flex-flow: column;
-  background-color: #404040;
-  flex-flow: row-reverse;
-}
-.single-project-container .single-project-content {
-  width: 80%;
-  height: 100%;
-}
-.single-project-container .single-project-content > img {
-  width: 300px;
-  overflow: hidden;
-}
-.single-project-container > h1 {
-  text-transform: uppercase;
-  color: #D9CCC5;
-  font-family: "Archivo", sans-serif;
-  font-size: clamp(1rem, 5vw, 7rem);
-  text-orientation: mixed;
-  writing-mode: sideways-lr;
-  margin: 0;
-}
-.single-project-container > p {
-  text-transform: uppercase;
-  color: #D9CCC5;
-  font-family: "Archivo", sans-serif;
-  max-width: 50px;
-  font-size: 1rem;
-}
-
 .skills-container {
   width: 100%;
   display: flex;
