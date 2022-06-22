@@ -1,27 +1,11 @@
 import react from "react";
-import { GrLinkedin } from 'react-icons/gr'
-import { GrGithub } from 'react-icons/gr'
 import { Text } from "./Text";
+import info from "../lang/skills_contacts.json"
 
 const Contact = () => {
 
-    const contactInformation = [
-        {
-            "title": "linkedin",
-            "url":"url",
-            "icon": <GrLinkedin />
-        },
-        {
-            "title": "github",
-            "url":"url",
-            "icon": <GrGithub />
-        },
-        {
-            "title": "github",
-            "url":"url",
-            "icon": <GrGithub />
-        }
-    ]
+    const contactInformation = info["contact"]
+    console.log(contactInformation)
 
     return (
         <div className="contact-container">
@@ -33,8 +17,7 @@ const Contact = () => {
             <div className="contact-list">
                 {contactInformation.map(e => {
                     return (<div className={e.title}>
-                        <a href={e.url}><h2>{e.title}</h2></a>
-                        <h2>{e.icon}</h2>
+                        <a href={e.url} target="_blank"><h2>{e.title}</h2></a>
                     </div>)
                 })}
             </div>

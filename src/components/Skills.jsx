@@ -1,11 +1,11 @@
 import react from "react";
 import SingleSkill from "./SingleSkill";
 import { Text } from "./Text";
-import skills from "../lang/skills.json"
+import info from "../lang/skills_contacts.json"
 
 const Skills = () => {
 
-    const skillArray = skills
+    const skillArray = info["skills"]
 
 
     return (

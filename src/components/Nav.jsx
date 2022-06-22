@@ -9,7 +9,7 @@ const Nav = () => {
                    <li><NavLink link="#landing" text="home" /></li>
                     <li><NavLink link="#about" text="about" /></li>
                     <li><NavLink link="#skills" text="skills" /></li>
-                    <li><NavLink link="contact" text="contact" /></li> 
+                    <li><NavLink link="#contact" text="contact" /></li> 
                 </ul>
                 <LanguageSelector/>
             </nav>
