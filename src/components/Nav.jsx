@@ -4,7 +4,10 @@ import NavLink from "./NavLink";
 
 const Nav = () => {
     return (
-            <nav className="nav-main">
+<>            <nav className="nav-main">
+                <div className="mobile-menu">
+                    <p>Menu</p>
+                </div>
                 <ul>
                    <li><NavLink link="#landing" text="home" /></li>
                     <li><NavLink link="#about" text="about" /></li>
@@ -13,6 +16,8 @@ const Nav = () => {
                 </ul>
                 <LanguageSelector/>
             </nav>
+        </>
+
     )
 }
 

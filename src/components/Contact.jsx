@@ -1,4 +1,3 @@
-import react from "react";
 import { Text } from "./Text";
 import info from "../lang/skills_contacts.json"
 
@@ -17,7 +16,7 @@ const Contact = () => {
             <div className="contact-list">
                 {contactInformation.map(e => {
                     return (<div className={e.title}>
-                        <a href={e.url} target="_blank"><h2>{e.title}</h2></a>
+                        <a href={e.url} target="_blank" rel="noreferrer"><h2>{e.title}</h2></a>
                     </div>)
                 })}
             </div>

@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Nav from './components/Nav';
 import Landing from "./components/Landing";
 import Motto from "./components/Motto";

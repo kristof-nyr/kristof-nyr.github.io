@@ -1,4 +1,3 @@
-import react from "react";
 import SingleSkill from "./SingleSkill";
 import { Text } from "./Text";
 import info from "../lang/skills_contacts.json"

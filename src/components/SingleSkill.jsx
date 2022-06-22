@@ -1,5 +1,3 @@
-import react from "react";
-
 const SingleSkill = ({name, size}) => {
 
     return (
