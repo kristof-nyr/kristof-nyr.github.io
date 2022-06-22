@@ -40,6 +40,10 @@
         "size":2
     },
     {
+        "name":"docker",
+        "size":2
+    },
+    {
         "name":"typescript",
         "size":2
     }],
