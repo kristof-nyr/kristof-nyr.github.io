@@ -39,37 +39,9 @@
         }
     }
 
-    .about-me{
-        margin: 0;
-        padding: 0;
-        grid-area: 1/3/1/15;
-        font-size: $x-large;
-        // text-transform: uppercase;
-
-        &>span {
-            font-family: $archivo;
-        }
-    }
-    .about-pic{
-        grid-area: 4/5/10/15;
-        
-        &>img {
-            width: 400px;
-            
-        }
-    }   
-    .about-pic2{
-        grid-area: 8/12/12/15;
-        
-        &>img {
-            width: 400px;
-            
-        }
-    }   
     .about-story {
         grid-area: 4/8/12/15;
         font-size: $medium;
-        //mix-blend-mode: difference;
     }
     .about-artsy {
         font-size: $medium;

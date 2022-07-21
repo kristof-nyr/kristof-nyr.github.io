@@ -14,11 +14,6 @@
             display: flex;
         }
     }
-    .circle {
-        position: absolute;
-        top: 20%;
-        right: 10%;
-    }
 
     .explore-container {
         position: absolute;
@@ -45,7 +40,6 @@
 
         }
         &:hover::after {
-            // left: 50%;
             width: 100%;
             opacity: 1;
         }

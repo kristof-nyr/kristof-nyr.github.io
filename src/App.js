@@ -4,7 +4,6 @@ import Motto from "./components/Motto";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Experiences from "./components/Experiences"
 import { LanguageProvider } from "./components/LanguageContext"
 
 function App() {
@@ -22,9 +21,6 @@ function App() {
           <section id="about">
             <About />
           </section>
-          {/* <section id="experiences">
-            <Experiences />
-          </section> */}
           <section id="skills">
             <Skills />
           </section>

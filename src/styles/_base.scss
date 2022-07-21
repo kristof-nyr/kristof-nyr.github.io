@@ -4,10 +4,8 @@ html, body {
     font-family: $questrial;
     background-color: $lght-gry;
     scroll-behavior: smooth;
-    // scroll-snap-type: proximity;
     scrollbar-width: none;
     overflow-x: hidden;
-    // cursor: none !important;
 
     ::selection {
         color: $lght-gry;
@@ -17,12 +15,10 @@ html, body {
 
     section {
         width: 100%;
-        // height: 100vh;
     }
 
     a {
         color: $slmn;
         text-decoration: none;
-        // cursor: none !important;
     }
 }
