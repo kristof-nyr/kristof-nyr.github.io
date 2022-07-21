@@ -2,7 +2,7 @@
     "nav": {
         "home": "Főoldal",
         "about": "Rólam",
-        "skills": "Képességek",
+        "skills": "Szakmai",
         "contact": "Kapcsolat"
     },
     "landing": {
@@ -10,7 +10,7 @@
 
     },
     "motto": {
-        "motto-text": "\"Value is through scarcity\""
+        "motto-text": "Value is through scarcity"
     },
     "about": {
         "title1": "szoftver",
@@ -23,7 +23,7 @@
         "artsy": "Úgy gondolom, hogy az önkifejezés és a vizuális történetmesélés kéz a kézben járnak. Ezért célom olyan vizuálisan elragadó alkotások létrehozása, amelyek érzéseket keltenek a nézőben."
     },
     "skills": {
-        "title": "képességek"
+        "title": "Szakmai"
     },
     "contact" : {
         "title": "kapcsolat"
