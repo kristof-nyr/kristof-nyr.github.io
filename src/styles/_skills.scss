@@ -41,20 +41,20 @@
         height: 10vh;
     }
     .size-2 {
-        width: 5vh;
-        height: 5vh;
+        width: 6vh;
+        height: 6vh;
     }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     .skills-grid {
         display: flex;
         flex-flow: column;
         align-items: center;
 
-        .single-skill{
-            padding: 10vh 0;
-        }
+        // .single-skill{
+        //     padding: 10vh 0;
+        // }
     }
 }
 }

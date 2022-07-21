@@ -24,7 +24,7 @@ const Skills = () => {
                 &mdash;<Text page="skills" text="title" />
             </h1>
         </motion.div>
-        <motion.div className="skills-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
+        <motion.div className="skills-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.1}}>
             {skillArray.map(skill => {
                 return <SingleSkill name={skill.name} size={skill.size} />
             })}
