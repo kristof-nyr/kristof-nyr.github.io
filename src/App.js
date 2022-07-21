@@ -22,9 +22,9 @@ function App() {
           <section id="about">
             <About />
           </section>
-          <section id="experiences">
+          {/* <section id="experiences">
             <Experiences />
-          </section>
+          </section> */}
           <section id="skills">
             <Skills />
           </section>

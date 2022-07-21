@@ -18,7 +18,7 @@ const Motto = () => {
         <motion.div className="motto-container" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <h1>
                 <div className="animate-motto">
-                    <Text page="motto" text="motto-text"/>                 
+                    &laquo;<Text page="motto" text="motto-text"/>&raquo;              
                 </div>
             </h1>
         </motion.div>
