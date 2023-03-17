@@ -17,19 +17,6 @@ const About = () => {
     }
     return (
         <>
-        <motion.div className="about-container" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
-            <h1 className="about-title">
-                <Text page={page} text="title1" />
-                <span>
-                <Text page={page} text="title2" />
-                </span>
-                &<br/>
-                <span>
-                <Text page={page} text="title3" />
-                </span>
-                <Text page={page} text="title4" />
-            </h1>
-        </motion.div>
         <motion.div className="about-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.8}}>
             <div className="brutalism-container">
                 <p>
