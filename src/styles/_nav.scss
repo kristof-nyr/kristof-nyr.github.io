@@ -22,6 +22,10 @@
       overflow-y: hidden;
       list-style: none;
       position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
       top: 0;
       left: 0;
       bottom: 0;
@@ -29,19 +33,21 @@
       background: $blk;
       height: 100vh;
       overflow: hidden;
-      max-width: 33vw;
+      max-width: 100vw;
       z-index: 9;
-      transition: 0.5s ease all;
+      transition: 0.5s width cubic-bezier(0.25, 0.6, 0.45, 0.94);
 
         &.showMenu {
-            padding: 0 5rem;
+            padding: 0;
             width: 100%;
-            transition: 0.5s ease all;
+            transition: 0.5s width cubic-bezier(0.25, 0.6, 0.45, 0.94);
+        
         }
         li {
             text-transform: uppercase;
             color: $slmn;
             padding: 2rem 0;
+            font-size: $large;
 
             &:after {
                 content: "";
@@ -57,7 +63,7 @@
     
             }
             &:hover::after {
-                width: 25%;
+                width: 75%;
                 opacity: 1;
             }
 
@@ -68,47 +74,6 @@
         }
     }
   }
- .nav-main {
-        mix-blend-mode: difference;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 10vh;
-        z-index: 999;
-
-        ul {
-            list-style: none;
-            
-            li {
-                display: inline-flex;
-                text-transform: uppercase;
-                padding: calc(2rem + 2vw);
-                font-size: $medium;
-
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        top: 10%;
-                        width: 0px;
-                        height: 5px;
-                        margin: 5px 0 0;
-                        transition: all 0.2s ease;
-                        transition-duration: 0.3s;
-                        opacity: 0;
-                        background-color: $slmn;
-
-                    }
-                    &:hover::before {
-                        width: 60px;
-                        opacity: 1;
-                    }
-
-            }
-        }
-    }
     .lang-select {
         text-transform: uppercase;
         padding: 1rem;
@@ -116,15 +81,25 @@
         cursor: pointer;
     }
     
-@media screen and (max-width: 900px) {
+
     .nav-main {
         display: none;
     }
     .mobile-menu {
+        width: 100%;
         display: flex;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 99;
+
+        .menu-toggle-btn {
+            font-size: $large;
+            background: none;
+
+            &>p {
+                padding: 0;
+                margin: 0;
+            }
+        }
     }
-}
