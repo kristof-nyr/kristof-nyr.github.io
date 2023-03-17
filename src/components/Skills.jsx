@@ -25,9 +25,14 @@ const Skills = () => {
             </h1>
         </motion.div>
         <motion.div className="skills-grid" initial="offscreen" whileInView="onscreen" variants={slidein} viewport={{once:true, amount:0.1}}>
+            <div className="confidence-indicator">
+                    <p>&#8637;</p>
+                    <p>Confidence level</p>
+            </div>
             {skillArray.map(skill => {
                 return <SingleSkill name={skill.name} size={skill.size} />
             })}
+            
         </motion.div>
         </>
     )
