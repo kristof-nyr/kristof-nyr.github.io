@@ -4,25 +4,25 @@
   "private": true,
   "homepage": "https://kristof-nyr.github.io/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.1.19",
     "@material-ui/core": "^4.12.4",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
-    "clean-css": "^5.2.4",
+    "clean-css": "^5.3.2",
     "font-awesome": "^4.7.0",
     "framer-motion": "^6.5.1",
-    "node-sass": "^7.0.1",
-    "popmotion": "^11.0.3",
+    "node-sass": "^8.0.0",
+    "nth-check": "^2.1.1",
+    "popmotion": "^11.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.8.0",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4",
-    "nth-check": ">=2.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,6 +55,6 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "sass": "^1.49.7"
+    "sass": "^1.59.3"
   }
 }
