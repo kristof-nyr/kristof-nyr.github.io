@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;900&display=swap');
 
 // NOTE: Colours
 $blk: #1e1e1e;
@@ -10,9 +11,12 @@ $slmn: #D9CCC5;
 // NOTE: Fonts
 $archivo: 'Archivo', sans-serif;
 $questrial: 'Questrial', sans-serif;
+$unbounded: 'Unbounded', cursive;
+
+
 
 //NOTE: Sizes
 $small: 1rem;
 $medium: calc(0.5rem + 1vw);
-$large: calc(1.5rem + 3vw);
+$large: calc(1rem + 3vw);
 $x-large: calc(1rem + 10vw);
