@@ -13,14 +13,14 @@
             "motto-text": "Value is through scarcity"
         },
         "about": {
-            "title1": "software",
+            "title1": "DevOps",
             "title2": "engineer",
             "title3": "design",
             "title4": "enthusiast",
             "brutalism-def": "Brutalism is a utilitarian aesthetic movement that shuns decoration in favor of exposing and celebrating the raw materials used to construct the design. By exposing materials of construction, brutalism has nothing to hide. It trades lofty ideals of beauty for the cold, hard truth.",
             "brutalism-review":"\"Cannot be understood through stylistic analysis, although some day a comprehensible style might emerge\"",
-            "story": "Computer science student based in Hungary. Currently working as a Software Engineer. My fascination with visual stuff came at an early age as I was mesmerized by certain art styles. Thus began my career as a front-end dev, which later transformed into full-stack. I'm also experimenting with DevOps principles, Golang and Cybersecurity.",
-            "artsy": "I also believe self-expression and visual storytelling go hand in hand. Hence I aim to create visually pleasing works which invoke feelings in its viewers. "
+            "story": "Computer science BSc, based in Hungary. Currently working as a DevOps Engineer. My fascination with visual stuff came at an early age as I was mesmerized by certain art styles. ⚏ Thus began my career as a front-end dev, which later transformed into DevOps. I'm studying Kubernetes, GitOps & CI/CD tools.",
+            "artsy": "I also believe self-expression and visual storytelling go hand in hand. Hence I aim to create visually pleasing works which invoke feelings in its viewers. ✳ My style could be defined as a mix between brutalism and neo-minimalism."
         },
         "skills": {
             "title": "skills"

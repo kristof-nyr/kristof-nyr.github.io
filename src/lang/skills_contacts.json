@@ -1,10 +1,10 @@
 {
 "skills": [{
-        "name":"react",
+        "name":"kubernetes",
         "size":4
     },
     {
-        "name":"scss",
+        "name":"docker",
         "size":4
     },
     {
@@ -12,45 +12,54 @@
         "size":4
     },
     {
-        "name":"photoshop",
+        "name":"scss",
         "size":4
     },
     {
-        "name":"nodejs",
+        "name":"gitops",
         "size":3
     },
     {
-        "name":"html",
+        "name":"gitlab ci",
         "size":3
     },
     {
-        "name":"cybersec",
-        "size":3
-    },
-    {
-        "name":"design patters",
-        "size":3
-    },
-    {
-        "name":"3D",
+        "name":"rest-api",
         "size":3
     },
     {
         "name":"golang",
-        "size":2
-    },
-    {
-        "name":"devops",
-        "size":2
-    },
-    {
-        "name":"docker",
-        "size":2
+        "size":3
     },
     {
         "name":"typescript",
+        "size":3
+    },
+    {
+        "name":"nosql",
+        "size":3
+    },
+    {
+        "name":"argocd",
         "size":2
-    }],
+    },
+    {
+        "name":"fluxcd",
+        "size":2
+    },
+    {
+        "name":"helm",
+        "size":2
+    },
+    {
+        "name":"iaac",
+        "size":2
+    },
+    {   
+        "name":"system design",
+        "size":2
+    }
+],
 
 "contact":[
         {
