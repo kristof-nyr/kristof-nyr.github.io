@@ -1,82 +1,83 @@
 {
-"skills": [{
-        "name":"kubernetes",
-        "size":4
+  "skills": [
+    {
+      "name": "kubernetes",
+      "size": 4
     },
     {
-        "name":"docker",
-        "size":4
+      "name": "docker",
+      "size": 4
     },
     {
-        "name":"javascript",
-        "size":4
+      "name": "javascript",
+      "size": 4
     },
     {
-        "name":"scss",
-        "size":4
+      "name": "scss",
+      "size": 4
     },
     {
-        "name":"gitops",
-        "size":3
+      "name": "gitops",
+      "size": 3
     },
     {
-        "name":"gitlab ci",
-        "size":3
+      "name": "gitlab ci",
+      "size": 3
     },
     {
-        "name":"rest-api",
-        "size":3
+      "name": "rest-api",
+      "size": 3
     },
     {
-        "name":"golang",
-        "size":3
+      "name": "golang",
+      "size": 3
     },
     {
-        "name":"typescript",
-        "size":3
+      "name": "typescript",
+      "size": 3
     },
     {
-        "name":"nosql",
-        "size":3
+      "name": "nosql",
+      "size": 3
     },
     {
-        "name":"argocd",
-        "size":2
+      "name": "argocd",
+      "size": 2
     },
     {
-        "name":"fluxcd",
-        "size":2
+      "name": "fluxcd",
+      "size": 2
     },
     {
-        "name":"helm",
-        "size":2
+      "name": "helm",
+      "size": 2
     },
     {
-        "name":"iaac",
-        "size":2
+      "name": "iaac",
+      "size": 2
     },
-    {   
-        "name":"system design",
-        "size":2
+    {
+      "name": "system design",
+      "size": 2
     }
-],
+  ],
 
-"contact":[
-        {
-            "title": "linkedin",
-            "url":"https://www.linkedin.com/in/kristof-nyr/"
-        },
-        {
-            "title": "github",
-            "url":"https://github.com/kristof-nyr"
-        },
-        {
-            "title": "instagram",
-            "url":"https://www.instagram.com/_krisanyari/"
-        },
-        {
-            "title": "mail",
-            "url":"mailto: nyari.kristof66@gmail.com"
-        }
-    ]
+  "contact": [
+    {
+      "title": "linkedin",
+      "url": "https://www.linkedin.com/in/kristof-nyr/"
+    },
+    {
+      "title": "github",
+      "url": "https://github.com/kristof-nyr"
+    },
+    {
+      "title": "instagram",
+      "url": "https://www.instagram.com/_krisanyari/"
+    },
+    {
+      "title": "mail",
+      "url": "mailto: nyari.kristof66@gmail.com"
+    }
+  ]
 }

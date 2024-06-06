@@ -1,69 +1,68 @@
 .about-container {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    &>h1 {
-        font-size: $x-large;
-        text-transform: uppercase;
-        color: $blk;
-        font-family: $unbounded;
-        font-size: clamp(1rem, 10vw, $x-large);
-        margin-bottom: 20rem;
+  & > h1 {
+    font-size: $x-large;
+    text-transform: uppercase;
+    color: $blk;
+    font-family: $unbounded;
+    font-size: clamp(1rem, 10vw, $x-large);
+    margin-bottom: 20rem;
 
-        &>span {
-            font-family: $questrial;
-            font-weight: 100;
-            font-size: clamp(1rem, 5vw, $x-large);
-        }
+    & > span {
+      font-family: $questrial;
+      font-weight: 100;
+      font-size: clamp(1rem, 5vw, $x-large);
     }
-
+  }
 }
 .about-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(15,1fr);
-    grid-template-rows: repeat(12,1fr);
-    color: $blk;
-    font-weight: 100;
-    text-align: justify;
-    margin: 10rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  color: $blk;
+  font-weight: 100;
+  text-align: justify;
+  margin: 10rem 0;
 
-    .brutalism-container {
-        margin: 0;
-        padding: 10px;
-        grid-area: 1/2/5/6;
-        border: 2px solid $blk;
+  .brutalism-container {
+    margin: 0;
+    padding: 10px;
+    grid-area: 1/2/5/6;
+    border: 2px solid $blk;
 
-        .review {
-            text-decoration: underline;
-        }
+    .review {
+      text-decoration: underline;
     }
+  }
 
+  .about-story {
+    grid-area: 4/8/12/15;
+    font-size: $medium;
+  }
+  .about-artsy {
+    font-size: $medium;
+    grid-area: 8/3/12/7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .brutalism-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-grid {
+    display: flex;
+    flex-flow: column;
     .about-story {
-        grid-area: 4/8/12/15;
-        font-size: $medium;
+      font-size: 5vw;
     }
     .about-artsy {
-        font-size: $medium;
-        grid-area:8/3/12/7;
+      font-size: 5vw;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .brutalism-container {
-      display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .about-grid {
-      display: flex;
-      flex-flow: column;
-      .about-story {
-        font-size: 5vw;
-      }
-      .about-artsy {
-        font-size: 5vw;
-      }
-    }
+  }
 }

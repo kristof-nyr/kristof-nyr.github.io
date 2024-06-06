@@ -1,19 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;900&display=swap");
 
 // NOTE: Colours
-$blk: #1e1e1e;
-$gry: #404040;
-$lght-gry: #e4e4e4;
-$slmn: #D9CCC5;
+$blk: #0d0d0d;
+$gry: #8A96A6;
+$lght-gry: #d9d9d9;
+$drk-gry: #64758C;
+$blue-gry: #1B2B40;
 
 // NOTE: Fonts
-$archivo: 'Archivo', sans-serif;
-$questrial: 'Questrial', sans-serif;
-$unbounded: 'Unbounded', cursive;
-
-
+$questrial: "Questrial", sans-serif;
+$unbounded: "Unbounded", cursive;
 
 //NOTE: Sizes
 $small: 1rem;

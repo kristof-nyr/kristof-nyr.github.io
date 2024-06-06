@@ -1,34 +1,23 @@
-import Nav from './components/Nav';
-import Landing from "./components/Landing";
-import Motto from "./components/Motto";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import { LanguageProvider } from "./components/LanguageContext"
+import Layout from "./layout/Layout";
+import Page404 from "./components/Page404";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "./routes";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      // parent route component
+      element: <Layout />,
+      errorElement: <Page404 />,
+      // child route components
+      children: routes,
+    },
+  ]);
 
   return (
-      <LanguageProvider>
-        <div className="App">
-          <Nav />
-          <section id="landing">
-            <Landing />
-          </section>
-          <section id="motto">
-            <Motto />
-          </section>
-          <section id="about">
-            <About />
-          </section>
-          <section id="skills">
-            <Skills />
-          </section>
-          <section id="contact">
-            <Contact />
-          </section>
-        </div>
-        </LanguageProvider>
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
