@@ -1,14 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font-family-sans: 'Mulish', sans-serif;
+    --font-family-mono: 'Roboto Mono', monospace;
+    --background-color: #F2F2F2;
+    --accent-color: #99A6BF;
+    --dark-accent-color: #4D5159;
+    --text-color: #161616;
+    --nav-background-color: #e8e8e9;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Mulish, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
-
+a {
+    text-decoration: none;
+    color: var(--dark-accent-color);
+    font-family: 'Roboto Mono', monospace; 
+}
+a:hover{
+    text-decoration:line-through;
+}
 nav{
     width: 100%;
     margin: 0;
     align-items: center;
     padding: 2rem 0;
-    background-color: #f8f9fa;
+    background-color: #e8e8e9;
 }
 nav>ul {
     display: flex;
@@ -16,4 +39,5 @@ nav>ul {
 }
 nav>ul>li{
     margin: 0 2rem;
+    list-style: none;
 }
