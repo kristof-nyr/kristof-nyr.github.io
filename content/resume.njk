@@ -1,0 +1,39 @@
+---js
+const eleventyNavigation = {
+	key: "Resume",
+	order: 4
+};
+---
+<section id="resume">
+    <h1>Resume</h1>
+    <div class="resume-section">
+        <h2>Experience</h2>
+        {% for job in resume.experience %}
+            <div class="job">
+                <h3>{{ job.title }}</h3>
+                <p>{{ job.company }} - {{ job.location }}</p>
+                <p>{{ job.startDate }} - {{ job.endDate }}</p>
+                <p>{{ job.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="resume-section">
+        <h2>Education</h2>
+        {% for education in resume.education %}
+            <div class="education">
+                <h3>{{ education.degree }}</h3>
+                <p>{{ education.institution }} - {{ education.location }}</p>
+                <p>{{ education.startDate }} - {{ education.endDate }}</p>
+                <p>{{ education.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="resume-section">
+        <h2>Skills</h2>
+        <ul>
+            {% for skill in resume.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
