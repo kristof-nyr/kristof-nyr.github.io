@@ -9,10 +9,11 @@ const eleventyNavigation = {
     <div class="resume-section">
         <h2>About</h2>
         <div class="about">
-            <p>{{ resume.about.name }}</p>
-            <p>{{ resume.about.label }}</p>
-            <p>{{ resume.about.location.city }} - {{ resume.about.location.countryCode }}</p>
-            <p>{{ resume.about.summary }}</p>
+            <p><b>Name: </b>{{ resume.about.name }}</p>
+            <p><b>Title: </b>{{ resume.about.label }}</p>
+            <p><b>Location: </b>{{ resume.about.location.city }} - {{ resume.about.location.countryCode }}</p>
+            <p><b>About: </b>{{ resume.about.summary }}</p>
+            <p><b>Links: </b></p>
             <p class="resume-links"><a href="{{ resume.about.profiles.linkedin }}">{{ resume.about.profiles.linkedin }}</a></p>
             <p class="resume-links"><a href="{{ resume.about.profiles.github }}">{{ resume.about.profiles.github }}</a></p>
         </div>
@@ -23,11 +24,14 @@ const eleventyNavigation = {
         {% for job in resume.experience %}
             <div class="job">
                 <h3>{{ job.position }}</h3>
-                <p>{{ job.company }} - {{ job.location }}</p>
-                <p>{{ job.startDate }} - {{ job.endDate }}</p>
+                <p><b>Company: </b>{{ job.company }} - {{ job.location }}</p>
+                <p><i>{{ job.startDate }} - {{ job.endDate }}</i></p>
+                <p><b>Summary: </b></p>
+                <ul class="job-summary">
                 {% for highlight in job.highlights %}
                     <p>{{ highlight }}</p>
                 {% endfor %}
+                </ul>
             </div>
         {% endfor %}
     </div>
@@ -37,9 +41,9 @@ const eleventyNavigation = {
         {% for education in resume.education %}
             <div class="education">
                 <h3>{{ education.studyTypeShort }}</h3>
-                <p>{{ education.institution }} - {{ education.location }}</p>
-                <p>{{ education.startDate }} - {{ education.endDate }}</p>
-                <p>{{ education.description }}</p>
+                <p><b>Institution: </b>{{ education.institution }} - {{ education.location }}</p>
+                <p><i>{{ education.startDate }} - {{ education.endDate }}</i></p>
+                <p><b>Major: </b>{{ education.description }}</p>
             </div>
         {% endfor %}
     </div>

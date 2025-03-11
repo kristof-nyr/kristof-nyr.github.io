@@ -273,6 +273,17 @@ nav>ul>li{
 	margin-right: 1em;
 }
 
+.resume-section>div>p {
+	line-height: 1em;
+}
+.job-summary>p {
+	margin: 0.25rem 0; 
+	line-height: 1em;
+}
+.job-summary>p:last-child {
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 500px) {
 	nav {
 		padding: 0;
