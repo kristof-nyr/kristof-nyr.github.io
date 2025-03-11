@@ -13,8 +13,9 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family-sans);
-	color: var(--text-color);
+	/* color: var(--text-color); */
 	background-color: var(--background-color);
+	overflow-x: hidden;
 }
 html {
 	overflow-y: scroll;
@@ -31,7 +32,7 @@ h1 {
 	font-size: 2.25em; /* 36px /16 */
 	font-family: var(--font-family-sans);
 	text-transform: uppercase;
-	letter-spacing: 1em;
+	letter-spacing: calc(1em - 20px);
 }
 h2 {
 	font-size: 1.5em;
@@ -40,7 +41,7 @@ h2 {
 }
 a {
     text-decoration: none;
-    color: var(--dark-accent-color);
+    /* color: var(--dark-accent-color); */
     font-family: var(--font-family-mono);
 }
 a:hover{
@@ -86,12 +87,12 @@ li {
 	line-height: 1.5;
 }
 
-a[href] {
+/* a[href] {
 	color: var(--text-color);
 }
 a[href]:visited {
 	color: var(--dark-accent-color);
-}
+} */
 
 main {
 	padding: 1rem;
@@ -100,12 +101,14 @@ main :first-child {
 	margin-top: 0;
 }
 footer {
+	width: 100%;
 	background-color: var(--nav-background-color);
 	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
@@ -161,6 +164,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
+	width: 100%;
 }
 .home-link {
 	flex-grow: 1;
@@ -173,9 +177,10 @@ header {
 
 /* Nav */
 nav{
+	display: flex;
     width: 100%;
     margin: 0;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem 0;
     background-color: #e8e8e9;
 }
@@ -183,8 +188,9 @@ nav>ul {
     display: flex;
     flex-flow: row;
 }
+
 nav>ul>li{
-    margin: 0 2rem;
+	margin: 0 2rem;
     list-style: none;
 }
 .nav-item {
@@ -217,11 +223,13 @@ nav>ul>li{
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;
+	font-family: var(--font-family-mono);
 }
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
+	font-family: var(--font-family-mono);
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -263,5 +271,17 @@ nav>ul>li{
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+@media screen and (max-width: 500px) {
+	nav {
+		padding: 0;
+	}
+	nav>ul {
+		flex-flow: column;
+	}
+	footer {
+		padding: 0.25rem;
+	}
 }
 
