@@ -1,0 +1,92 @@
+{
+    "about": {
+        "name": "Kristóf Nyári",
+        "label": "Cloud & DevOps Engineer",
+        "location": {
+            "city": "Budapest",
+            "countryCode": "HU"
+        },
+        "summary": "I am a Cloud and DevOps Engineer who strives for innovation and excellence. I consider myself an innovator and a life-long learner. I have a quality and customer focused mindset. I am interested in Cloud Native applications, Automation and AI Agents.",
+        "profiles": {
+                "linkedin": "https://www.linkedin.com/in/kristof-nyr/",
+                "github": "https://github.com/kristof-nyr"
+        }
+    },
+    "experience": [
+        {
+            "company": "Deutsche Telekom IT Solutions",
+            "location": "Budapest, Hungary",
+            "position": "Senior DevOps Engineer",
+            "startDate": "2024.09.",
+            "endDate": "Present",
+            "highlights": [
+                "Worked in an international cross-functional supporting team",
+                "Built and maintained a fully Cloud Native infrastructure hosting 20+ production microservices",
+                "Automated the lifecycle of the microservice applications (Build - Test - Deploy) via GitLab CI/CD",
+                "Optimized and secured Cloud Native applications which serve hundreds of customers including automation and identity management tools as well as databases.",
+                "Implemented a Cloud Native Monitoring and Alerting stack ensuring a first line of defense in case of outages, which helped in reducing the number of active alerts by ~90%",
+                "Worked with the Open Telekom Cloud that hosted our Highly Available Gardener Cluster",
+                "Key Technologies: Kubernetes, OTC, Gardener, ArgoCD, Prometheus & Grafana, IaC, GitLab CI/CD]"
+            ]
+        },
+        {
+            "company": "adesso Hungary",
+            "location": "Budapest, Hungary",
+            "position": "Cloud & DevOps Engineer",
+            "startDate": "2023.03.",
+            "endDate": "2024.09.",
+            "highlights": [
+                "Worked on multiple projects with customer-facing roles in a cross-functional enabling team",
+                "Helped architect and implement a fully AWS native Data Mesh",
+                "Played a Key role in building and maintaining multiple Data Platforms that served hundreds of customers and enabled a modern way of data governance, ownership and collaboration",
+                "Ensured that the Highly Available Production Kubernetes cluster hosting said Data Platforms was reliable, working optimally and is cost-optimized.",
+                "Built Cloud Native ETL Pipelines via AWS CloudFormation enabling the smooth ingestion and processing of unstructured data, which evaluated to about 10 GBs per day",
+                "Ensured up-to-date Security Best Practices within Kubernetes Clusters and Public Cloud",
+                "Key Technologies: Kubernetes, AWS, IaC (CloudFormation), GitLab CI/CD]"
+            ]
+        },
+        {
+            "company": "Novell Professional Services Hungary",
+            "location": "Pécs, Hungary",
+            "position": "DevOps Intern",
+            "startDate": "2019.09.",
+            "endDate": "2022.12.",
+            "highlights": [
+                "Operated, maintained and upgraded production Linux servers",
+                "Optimized production Databases and Tables in MySQL",
+                "Implemented a Monitoring stack, namely Prometheus & Grafana",
+                "Created GitLab CI/CD Pipelines to automate repetitive tasks",
+                "Key Technologies: Linux, Databases, Monitoring tools, CI/CD tools"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Eötvös Loránd Technical University",
+            "location": "Budapest, Hungary",
+            "area": "Data Science",
+            "studyType": "Master of Science",
+            "studyTypeShort": "M.Sc.",
+            "startDate": "2025",
+            "endDate": "Present",
+            "description": "Data Science"
+        },
+        {
+            "institution": "University of Pécs",
+            "location": "Pécs, Hungary",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "studyTypeShort": "B.Sc.",
+            "startDate": "2019",
+            "endDate": "2023",
+            "description": "Computer Science, Software developer specialization"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Kubernetes",
+            "experience": "Intermediate"
+        }
+    ]
+
+}

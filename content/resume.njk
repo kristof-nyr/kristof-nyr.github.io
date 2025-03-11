@@ -7,32 +7,48 @@ const eleventyNavigation = {
 <section id="resume">
     <h1>Resume</h1>
     <div class="resume-section">
+        <h2>About</h2>
+        <div class="about">
+            <p>{{ resume.about.name }}</p>
+            <p>{{ resume.about.label }}</p>
+            <p>{{ resume.about.location.city }} - {{ resume.about.location.countryCode }}</p>
+            <p>{{ resume.about.summary }}</p>
+            <p class="resume-links"><a href="{{ resume.about.profiles.linkedin }}">{{ resume.about.profiles.linkedin }}</a></p>
+            <p class="resume-links"><a href="{{ resume.about.profiles.github }}">{{ resume.about.profiles.github }}</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="resume-section">
         <h2>Experience</h2>
         {% for job in resume.experience %}
             <div class="job">
-                <h3>{{ job.title }}</h3>
+                <h3>{{ job.position }}</h3>
                 <p>{{ job.company }} - {{ job.location }}</p>
                 <p>{{ job.startDate }} - {{ job.endDate }}</p>
-                <p>{{ job.description }}</p>
+                {% for highlight in job.highlights %}
+                    <p>{{ highlight }}</p>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>
+    <hr>
     <div class="resume-section">
         <h2>Education</h2>
         {% for education in resume.education %}
             <div class="education">
-                <h3>{{ education.degree }}</h3>
+                <h3>{{ education.studyTypeShort }}</h3>
                 <p>{{ education.institution }} - {{ education.location }}</p>
                 <p>{{ education.startDate }} - {{ education.endDate }}</p>
                 <p>{{ education.description }}</p>
             </div>
         {% endfor %}
     </div>
+    <hr>
     <div class="resume-section">
         <h2>Skills</h2>
         <ul>
             {% for skill in resume.skills %}
-                <li>{{ skill }}</li>
+                <li>{{ skill.name }} - {{ skill.experience }}</li>
             {% endfor %}
         </ul>
     </div>
