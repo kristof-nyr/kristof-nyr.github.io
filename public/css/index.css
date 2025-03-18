@@ -1,5 +1,5 @@
 :root {
-    --font-family-sans: 'Mulish', sans-serif;
+    --font-family-sans: 'Helveticaneuecyr', sans-serif;
     --font-family-mono: 'Roboto Mono', monospace;
     --background-color: #F2F2F2;
     --accent-color: #99A6BF;
@@ -29,13 +29,13 @@ body {
 	justify-content: space-between;
 }
 h1 {
-	font-size: 2.25em; /* 36px /16 */
+	font-size: 6vw; /* 36px /16 */
 	font-family: var(--font-family-sans);
 	text-transform: uppercase;
-	letter-spacing: calc(1em - 20px);
+	letter-spacing: -.005em;
 }
 h2 {
-	font-size: 1.5em;
+	font-size: 2vw;
 	font-family: var(--font-family-sans);
 	text-transform: uppercase;
 }
@@ -109,6 +109,28 @@ footer {
 	align-items: center;
 }
 
+._404wrapper {
+	display: flex;
+	flex-flow: row;
+	min-width: 100vw;
+	justify-content: space-around;
+	align-items: center;
+	max-height: 60vh;
+}
+
+._6-col-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1.22vw;
+	grid-template-rows: auto;
+	grid-auto-columns: 1fr;
+	place-items: end start;
+	width: 100%;
+}
+
+._grid-postlist {
+	grid-area: 1/2/3/5;
+}
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
@@ -182,7 +204,8 @@ nav{
     margin: 0;
     align-items: flex-start;
     padding: 1rem 0;
-    background-color: #e8e8e9;
+    /* background-color: #e8e8e9; */
+	border-bottom: 1px solid var(--text-color);
 }
 nav>ul {
     display: flex;
@@ -293,6 +316,12 @@ nav>ul>li{
 	}
 	footer {
 		padding: 0.25rem;
+	}
+	h2 {
+		font-size: 5vw; /* 36px /16 */
+	}
+	._6-col-grid{
+		display: flex;
 	}
 }
 
