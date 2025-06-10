@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkristof_nyr_portfolio=self.webpackChunkkristof_nyr_portfolio||[]).push([[102],{102:(e,o,s)=>{s.r(o),s.d(o,{default:()=>h});s(43);var t=s(579);const h=()=>(0,t.jsxs)("div",{children:[(0,t.jsx)("h1",{children:"Welcome to the Home Component"}),(0,t.jsx)("p",{children:"This is the home page of the website."})]})}}]);
+//# sourceMappingURL=102.ad6cafe5.chunk.js.map

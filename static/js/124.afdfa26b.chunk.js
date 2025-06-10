@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkristof_nyr_portfolio=self.webpackChunkkristof_nyr_portfolio||[]).push([[124],{124:(s,e,t)=>{t.r(e),t.d(e,{default:()=>o});t(43);var i=t(579);const o=()=>(0,i.jsxs)("div",{children:[(0,i.jsx)("h2",{children:"About"}),(0,i.jsx)("p",{children:"This is the About section of the website."})]})}}]);
+//# sourceMappingURL=124.afdfa26b.chunk.js.map
