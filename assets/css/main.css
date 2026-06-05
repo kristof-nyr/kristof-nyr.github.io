@@ -51,8 +51,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ---- LAYOUT ---- */
-
 .page-wide {
   width: 100%;
   padding: 0 var(--pad);
@@ -62,8 +60,6 @@ body {
   max-width: 65ch;
   padding: 0 var(--pad);
 }
-
-/* ---- WORDMARK ---- */
 
 .wordmark {
   font-family: var(--mono);
@@ -202,10 +198,6 @@ body {
   opacity: 0.25;
 }
 
-/* ==============================
-   SECTION PAGES (writing, experience)
-   ============================== */
-
 .section-header {
   padding: var(--pad);
   padding-top: 1rem;
@@ -231,8 +223,6 @@ body {
   text-transform: uppercase;
   margin: 1.5rem 0 1rem;
 }
-
-/* ---- WRITING LIST ---- */
 
 .post-list {
   list-style: none;
@@ -295,8 +285,6 @@ body {
   margin-top: 0.15rem;
 }
 
-/* ---- SINGLE POST ---- */
-
 .post-hero {
   padding: var(--pad);
   padding-top: 1rem;
@@ -347,8 +335,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-
-/* ---- POST CONTENT ---- */
 
 .post-content {
   padding-top: 2.5rem;
@@ -449,8 +435,6 @@ body {
   margin: 3rem 0;
 }
 
-/* ---- IMAGES ---- */
-
 .post-content img {
   max-width: 100%;
   height: auto;
@@ -493,8 +477,6 @@ body {
   padding-left: var(--pad);
 }
 
-/* ---- POST FOOTER ---- */
-
 .post-end {
   padding: 1.5rem var(--pad);
   border-top: 2px solid var(--ink);
@@ -517,10 +499,6 @@ body {
   content: "← ";
   opacity: 0.4;
 }
-
-/* ==============================
-   EXPERIENCE
-   ============================== */
 
 .exp-list {
   list-style: none;
@@ -581,7 +559,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ---- EMPTY STATE ---- */
 
 .empty-state {
   font-family: var(--mono);
@@ -592,10 +569,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-
-/* ==============================
-   RESPONSIVE
-   ============================== */
 
 @media (max-width: 700px) {
   html {
