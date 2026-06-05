@@ -570,6 +570,63 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* ---- 404 ---- */
+
+.error-page {
+  padding: var(--pad);
+  padding-top: clamp(4rem, 15vw, 12rem);
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-code {
+  font-family: var(--heading);
+  font-weight: 900;
+  font-size: clamp(8rem, 25vw, 20rem);
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  opacity: 0.06;
+  position: absolute;
+  top: clamp(1rem, 5vw, 4rem);
+  right: var(--pad);
+  user-select: none;
+}
+
+.error-title {
+  font-family: var(--heading);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+  margin-bottom: 1.5rem;
+}
+
+.error-desc {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 40ch;
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+}
+
+.error-link {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.error-link:visited {
+  color: var(--visited);
+}
+
 @media (max-width: 700px) {
   html {
     font-size: 16px;
