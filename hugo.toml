@@ -13,6 +13,8 @@ title = "Kristof Nyari"
 [params]
   description = "software engineer"
   github = "https://github.com/kristof-nyr"
+  email = "mailto:kristofnyr@proton.me"
+  linkedin = "https://linkedin.com/in/kristof-nyr"
 
 [permalinks]
   writing = "/writing/:slug/"

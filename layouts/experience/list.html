@@ -1,26 +1,24 @@
 {{ define "main" }}
-<div class="page-wide">
+<div class="section-header">
   <a href="/" class="wordmark">{{ .Site.Title }}</a>
   <h1 class="page-title">experience</h1>
 </div>
 
-<div class="page-narrow">
-  {{ .Content }}
+{{ .Content }}
 
-  {{ $items := where .Pages "Params.draft" "ne" true }}
-  {{ if $items }}
-  <ul class="exp-list">
-    {{ range $items.ByParam "weight" }}
-    <li class="exp-item">
-      <h2 class="exp-item-what">{{ .Title }}</h2>
-      {{ with .Params.where }}<p class="exp-item-where">{{ . }}</p>{{ end }}
-      <p class="exp-item-why">{{ .Params.summary }}</p>
-      {{ with .Params.stack }}<p class="exp-item-stack">{{ . }}</p>{{ end }}
-    </li>
-    {{ end }}
-  </ul>
-  {{ else }}
-  <p class="empty-state">Nothing here yet.</p>
+{{ $items := where .Pages "Params.draft" "ne" true }}
+{{ if $items }}
+<ul class="exp-list">
+  {{ range $items.ByParam "weight" }}
+  <li class="exp-item">
+    <h2 class="exp-item-what">{{ .Title }}</h2>
+    {{ with .Params.where }}<p class="exp-item-where">{{ . }}</p>{{ end }}
+    <p class="exp-item-why">{{ .Params.summary }}</p>
+    {{ with .Params.stack }}<p class="exp-item-stack">{{ . }}</p>{{ end }}
+  </li>
   {{ end }}
-</div>
+</ul>
+{{ else }}
+<p class="empty-state">Nothing here yet.</p>
+{{ end }}
 {{ end }}
