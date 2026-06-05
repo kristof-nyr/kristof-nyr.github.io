@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="page-wide">
+  <header>
+    <h1 class="home-name">{{ .Site.Title }}</h1>
+    <p class="home-desc">{{ .Site.Params.description }}</p>
+  </header>
+
+  <nav>
+    <ul class="home-nav">
+      <li><a href="/writing/">writing</a></li>
+      <li><a href="/experience/">experience</a></li>
+    </ul>
+  </nav>
+
+  <footer class="home-contact">
+    {{ with .Site.Params.email }}<a href="mailto:{{ . }}">email</a>{{ end }}
+    {{ with .Site.Params.github }}<a href="{{ . }}">github</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a href="{{ . }}">linkedin</a>{{ end }}
+  </footer>
+</div>
+{{ end }}

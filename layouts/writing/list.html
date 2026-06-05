@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="page-wide">
+  <a href="/" class="wordmark">{{ .Site.Title }}</a>
+  <h1 class="page-title">writing</h1>
+</div>
+
+<div class="page-narrow">
+  {{ $posts := where .Pages "Params.draft" "ne" true }}
+  {{ if $posts }}
+  <ul class="post-list">
+    {{ range $posts.ByDate.Reverse }}
+    <li class="post-item">
+      <p class="post-item-date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      </p>
+      <h2 class="post-item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.summary }}<p class="post-item-summary">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p class="empty-state">Nothing here yet.</p>
+  {{ end }}
+</div>
+{{ end }}

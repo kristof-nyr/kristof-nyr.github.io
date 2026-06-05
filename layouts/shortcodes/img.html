@@ -1,0 +1,7 @@
+{{- $wide := .Get "wide" | default false -}}
+<figure class="post-figure{{ if $wide }} post-figure--wide{{ end }}">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default "" }}" loading="lazy">
+  {{- with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
