@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="post-hero">
+  <a href="/" class="wordmark">{{ .Site.Title }}</a>
+  <div class="post-meta">
+    <p class="post-date">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+    </p>
+    <p class="post-reading">{{ math.Round (div (countwords .Content) 200.0) }} min read</p>
+  </div>
+  <h1 class="post-title">{{ .Title }}</h1>
+</div>
+
+<div class="page-narrow">
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="post-end">
+  <a href="/writing/">all writing</a>
+</div>
+{{ end }}
